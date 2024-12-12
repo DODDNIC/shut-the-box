@@ -1,0 +1,141 @@
+/* basic css reset */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+*{ margin: 0; }
+img{
+    display:block;
+    max-width: 100%;
+}
+/* basic css reset */
+
+.start{
+    text-align: center;
+    display: grid;
+    /* display: none; */
+    grid-template-areas: " t "
+                         "p1"
+                         "p2"
+                         "pb";
+}
+
+.title{
+    font-size: 5rem;
+    grid-area: t;
+}
+
+.player-1{
+    margin: 1rem 50rem;
+    padding: 1rem;
+    grid-area: p1;
+}
+
+.player-2{
+    margin: 1rem 50rem;
+    padding: 1rem;
+    grid-area: p2;
+}
+
+#play-btn{
+    margin: 1rem 50rem;
+    padding: 1rem;
+    grid-area: pb;
+}
+
+
+
+
+.game{
+    /* display: grid; */
+    display: none;
+}
+
+.top{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+}
+
+.box{
+    border: 3px solid black;
+    margin: .5rem;
+    text-align: center;
+    padding: 5rem;
+    font-size: 2rem;
+}
+
+#roll-element{
+    display: none;
+    /* display: grid; */
+    gap: 1rem;
+    font-size: 3rem;
+    justify-content: center;
+}
+
+
+#score{
+    display: none;
+    /* display: grid; */
+    /* margin: auto; */
+
+}
+
+#round{
+    border: 3px solid black;
+}
+
+#p1-score{
+    border: 3px solid black;
+}
+
+#p2-score{
+    border: 3px solid black;
+}
+
+#win{
+    display: none;
+    /* display: grid; */
+    text-align: center;
+    grid-template: "w"
+                    "n";
+    font-size: 20rem;
+    color: red;
+}
+
+.shut{
+    border: 3px solid darkred;
+    color: red;
+}
+
+.score{
+    /* justfiy-content: center; */
+    display: grid;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.reset{
+    /* justfiy-content: center; */
+    margin: auto;
+    font-size: 10rem;
+}
+
+.dice{
+    display: flex;
+    justify-content: center;
+}
+
+th, td{
+    /* border-spacing: 0px; */
+    padding: 20px;
+    font-size: 20px;
+    border: solid black 4px;
+}
